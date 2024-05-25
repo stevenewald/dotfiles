@@ -47,3 +47,5 @@ keymap("n", "<leader>x", "<Cmd>BufferClose<CR>", opts)
 -- keymap("n", "<C-k>", "<Cmd>TmuxNavigateUp<CR>", opts)
 -- keymap("n", "<C-l>", "<Cmd>TmuxNavigateRight<CR>", opts)
 -- keymap("n", "", "<C-U>TmuxNavigatePrevious<cr>", opts)
+
+-- Copilot
