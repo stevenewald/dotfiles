@@ -1,5 +1,5 @@
-source ~/.config/zsh/zoxide-init.sh
 source ~/.config/zsh/omzsh-init.sh
+zsh-defer source ~/.config/zsh/zoxide-init.sh
 
 alias v=nvim
 alias t=task
