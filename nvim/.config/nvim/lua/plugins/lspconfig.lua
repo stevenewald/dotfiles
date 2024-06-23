@@ -49,10 +49,18 @@ local M = {
 
 		lspconfig.clangd.setup({
 			cmd = {
-				"clangd",
+				"/opt/homebrew/opt/llvm@18/bin/clangd",
 				"--background-index",
+				"-j=12",
 				"--clang-tidy",
-				"--suggest-missing-includes"
+				"--clang-tidy-checks=*",
+				"--suggest-missing-includes",
+				"--all-scopes-completion",
+				"--cross-file-rename",
+				"--completion-style=detailed",
+				"--header-insertion-decorators",
+				"--header-insertion=iwyu",
+				"--pch-storage=memory",
 			},
 			capabilities = capabilities,
 			on_attach = on_attach,
