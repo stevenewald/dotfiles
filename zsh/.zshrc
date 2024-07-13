@@ -12,3 +12,10 @@ bindkey -v
 export EDITOR='nvim'
 export PATH="$HOME/.local/bin:$PATH"
 bindkey '^R' history-incremental-search-backward
+
+# bun completions
+[ -s "/home/stevenewald/.bun/_bun" ] && source "/home/stevenewald/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

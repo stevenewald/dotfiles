@@ -14,7 +14,8 @@ M.config = function()
 
 	configs.setup {
 		cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
-		ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python", "cpp", "cmake", "regex", "go", "rust" },
+		ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python",
+			"cpp", "cmake", "regex", "go", "rust", "tsx", "javascript", "typescript" },
 		ignore_install = { "" },
 		sync_install = false,
 

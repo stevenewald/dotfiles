@@ -74,6 +74,9 @@ plugins=()
 
 source $ZSH/oh-my-zsh.sh
 zsh-defer source $ZSH/plugins/git/git.plugin.zsh
+zsh-defer source $ZSH/plugins/docker/docker.plugin.zsh
+zsh-defer source $ZSH/plugins/docker-compose/docker-compose.plugin.zsh
+zsh-defer source $ZSH/plugins/tmux/tmux.plugin.zsh
 zsh-defer source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 zsh-defer source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
