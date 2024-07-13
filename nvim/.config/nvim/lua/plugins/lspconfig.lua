@@ -49,7 +49,7 @@ local M = {
 
 		lspconfig.clangd.setup({
 			cmd = {
-				"/opt/homebrew/opt/llvm@18/bin/clangd",
+				"clangd",
 				"--background-index",
 				"-j=12",
 				"--clang-tidy",
