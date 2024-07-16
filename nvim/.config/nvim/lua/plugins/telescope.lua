@@ -2,7 +2,8 @@ M = {
 	"nvim-telescope/telescope.nvim",
 	cmd = { "Telescope" },
 	dependencies = {
-		"nvim-lua/plenary.nvim"
+		"nvim-lua/plenary.nvim",
+		"burntsushi/ripgrep"
 	}
 }
 
