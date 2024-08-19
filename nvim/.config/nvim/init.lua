@@ -1,4 +1,6 @@
 require("lazy_nvim")
 require("mappings")
 require("options")
-require ("better_cd")
+
+require ("helpers/better_cd")
+require ("helpers/buffer_close")
