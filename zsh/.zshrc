@@ -1,6 +1,6 @@
 source ~/.config/zsh/omzsh-init.sh
 zsh-defer source ~/.config/zsh/zoxide-init.sh
-zsh-defer source ~/.config/zsh/ignored.sh
+# zsh-defer source ~/.config/zsh/ignored.sh
 
 alias v=nvim
 alias t=task
@@ -16,3 +16,6 @@ bindkey '^R' history-incremental-search-backward
 
 export UID=$(id -u)
 export GID=$(id -g)
+
+zstyle ':omz:plugins:alias-finder' autoload yes 
+zstyle ':omz:plugins:alias-finder' cheaper yes
