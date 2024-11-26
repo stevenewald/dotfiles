@@ -16,11 +16,14 @@ local M = {
 			"lua_ls",
 			"tsserver",
 			"pyright",
+			"rust_analyzer"
 		}
 
 		local on_attach = function()
 			vim.diagnostic.config({
-				signs = false
+				signs = false,
+				severity_sort = true,
+				underline = true,
 			})
 			local bufopts = { noremap = true, silent = true, buffer = 0 }
 			vim.keymap.set("n", "f", function()
