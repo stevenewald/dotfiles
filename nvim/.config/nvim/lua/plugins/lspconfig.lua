@@ -2,15 +2,11 @@ local M = {
 	"neovim/nvim-lspconfig",
 	dependencies = {
 		{ "williamboman/mason.nvim", config = true },
-		{ "hrsh7th/nvim-cmp" },
-		{ "hrsh7th/cmp-nvim-lsp" },
+		{ "saghen/blink.cmp" }
 	},
 	event = { "BufReadPost", "BufNewFile" },
 	config = function()
 		local lspconfig = require("lspconfig")
-		local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol
-			.make_client_capabilities());
-		capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 		local servers = {
 			"lua_ls",
@@ -36,6 +32,7 @@ local M = {
 		end
 
 		-- setup servers
+		local capabilities = require('blink.cmp').get_lsp_capabilities()
 		for _, lsp in pairs(servers) do
 			lspconfig[lsp].setup({
 				capabilities = capabilities,
