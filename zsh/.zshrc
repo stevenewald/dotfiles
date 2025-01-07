@@ -4,10 +4,9 @@ zsh-defer source ~/.config/zsh/zoxide-init.sh
 # zsh-defer source ~/.config/zsh/ignored.sh
 
 alias v=nvim
-alias t=task
+alias t=go-task
 alias c=z
 
-alias tmux="tmux -f ~/.tmux.conf"
 export TERMINFO=/usr/share/terminfo
 
 bindkey -v

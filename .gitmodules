@@ -10,3 +10,6 @@
 [submodule "zsh/.config/zsh/custom-omz/plugins/zsh-defer"]
 	path = zsh/.config/zsh/custom-omz/plugins/zsh-defer
 	url = git@github.com:romkatv/zsh-defer.git
+[submodule "tmux/.config/tmux/tpm"]
+	path = tmux/.config/tmux/tpm
+	url = https://github.com/tmux-plugins/tpm.git
