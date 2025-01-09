@@ -10,7 +10,7 @@ local M = {
 
 		local servers = {
 			"lua_ls",
-			"ts_ls",
+			"tsserver",
 			"pyright",
 			"rust_analyzer"
 		}
