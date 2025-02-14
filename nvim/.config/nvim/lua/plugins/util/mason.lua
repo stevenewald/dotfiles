@@ -9,7 +9,7 @@ M = {
 	config = function(_, opts)
 		require("mason").setup(opts)
 		require("mason-lspconfig").setup {
-			ensure_installed = { "pyright", "lua_ls", "cmake", "dockerls", "pylsp", "bashls", "gopls", "clangd", "ts_ls", "rust_analyzer" },
+			ensure_installed = { "pyright", "lua_ls", "cmake", "dockerls", "pylsp", "bashls", "gopls", "clangd", "rust_analyzer" },
 			automatic_installation = true,
 		}
 
