@@ -1,3 +1,5 @@
+-- Not setup yet for colemak
+
 M = {
 	"git@github.com:github/copilot.vim.git",
 	cmd = { "Copilot" },
