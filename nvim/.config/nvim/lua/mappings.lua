@@ -26,13 +26,12 @@ keymap("n", "<Esc>", ":noh<CR><Esc>", opts)
 -- Nvim tree
 if (vim.g.use_colemak) then
 	keymap("n", "<C-m>", "<Cmd>NvimTreeToggle<CR>", opts)
-	keymap("i", "jj", "<Esc>", opts)
 	keymap("n", "<C-f>", "<Cmd>BufferNext<CR>", opts)
 else
 	keymap("n", "<C-n>", "<Cmd>NvimTreeToggle<CR>", opts)
-	keymap("i", "nn", "<Esc>", opts)
 	keymap("n", "<C-e>", "<Cmd>BufferNext<CR>", opts)
 end
+keymap("i", "<Tab>", "<Esc>", opts)
 keymap("n", "<leader>e", "<Cmd>NvimTreeFindFile<CR><Cmd>NvimTreeFocus<CR>", opts)
 
 -- Tabs
